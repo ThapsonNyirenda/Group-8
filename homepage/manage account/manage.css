@@ -1,0 +1,66 @@
+.main{
+    display: flex;
+    padding: 5px;
+    justify-content: center
+}
+
+.div1{
+    grid-row: 1/span 2;
+    grid-column: 1/spsan 2;
+    height: 600px;
+    width: 700px;
+    padding: 10px;
+}
+
+.content{
+    background-image: url("pexels-tirachard-kumtanom-733857.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    height: 600px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.acc{
+    width: 240px;
+    height: 450px;
+    background-color: rgb(3, 110, 3,0.6);
+    float: left;
+    margin: 5px;
+    margin-left: 15px;
+    font-family: cursive;
+    font-size: 16px;
+    font-weight: bold;
+}
+.upload{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px;
+    width: 210px;
+    height: 450px;
+    background-color: rgba(189, 18, 180, 0.6);
+    float: left;
+    font-family: cursive;
+}
+.cont{
+    text-decoration: none;
+}
+.myacc{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: -20px;
+    font-family: cursive;
+}
+
+.uplo{
+    text-decoration: none
+}
+
+input{
+    border-radius: 7px;
+    height: 18px;
+}

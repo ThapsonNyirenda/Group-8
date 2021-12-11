@@ -1,0 +1,318 @@
+.content{
+    display: grid;
+    padding: 5px;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    height: 98vh;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.content{
+    background-image: url('image4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+    //animation-name: wallpaper;
+    animation-direction: alternate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    //background-color:  rgb(30, 50, 100,0.4);
+
+}
+.nav{
+    grid-column: 1/span 5;
+    background-color: rgb(30, 50, 100,0.7);
+    width: 99.8%;
+    height: 43px;
+    text-align: right;
+    padding: 4px;
+    margin: -3px;
+   
+}
+
+.navs{
+    margin-right: 15px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.navs a{
+    text-decoration: none;
+    padding: 17px;
+    padding-top: 13px;
+    color: whitesmoke;
+    border-bottom: 2px solid red;
+}
+
+.navs a:hover{
+    background-color: whitesmoke;
+    color: rgb(52, 199, 47);
+    border-bottom: 5px solid red;
+    font-size: 17px;
+}
+.navs:hover{
+    background-color: whitesmoke;
+}
+
+.navdiv{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: -9px;
+}
+
+.sidebar{
+    background-color: rgb(10, 0, 0,0.8);
+    grid-row: 2/span 3;
+    height: 665px;;
+    width: 190px;
+    position: fixed;
+    display: none;
+    animation: onmove 0.1s;
+    animation-duration: 0.2s;
+    transition: 1s;
+    padding: 5px;
+    margin: -5px;
+    
+}
+
+#logout{
+    text-decoration: none;
+    border: none;
+    font-size: 17px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    padding: 1.5PX;
+    border-radius: 2PX;
+}
+
+#logout:hover{
+    background-color: rgb(91, 65, 209);
+    padding: 5px;
+}
+
+.input{
+    border-radius: 5px;
+    height: 20px;
+}
+
+#drop{
+    height: 130px;
+    width: 150px;
+    grid-column: 4/auto;
+    grid-row: 2/auto;
+    margin-left: -80px;
+    background-color: rgb(30, 50, 100,0.7);
+    display: none;
+    transition: 1s;
+    margin-top: -3px;   
+
+}
+@keyframes dropf{
+    form{height: 1px;}
+    to{height: 130px;}
+}
+#drop a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+#drop a:hover{
+    border-bottom: 3px solid red;
+    font-size: 20px;
+}
+
+.search{
+    color: white;
+}
+
+#sidespan{
+    position: absolute;
+    right: 0;
+    top: 0;  
+}
+
+#x:hover{
+    background-color: rgb(12, 11, 11);
+    color: whitesmoke;
+}
+
+
+   @keyframes trans{
+        from {left: 0;}
+        to {left: 30px;}
+    }
+
+    @keyframes high{
+        from {height: 0;}
+        to {height: 500px;}
+    }
+
+    @keyframes onmove{
+        from {width: 0;}
+        to {width: 190px;}
+    }
+
+    @keyframes wallpaper{
+        0%{
+            background-image: url(images/image\ 1.jpg);
+        }
+        20%{
+            background-image: url(images/image\ 2.jpg);
+        }
+        40%{
+            background-image: url(images/image\ 3.jpg);
+        }
+        60%{
+            background-image: url(images/image\ 4.jpg);
+        }
+        80%{
+            background-image: url(images/image\ 8.jpg);
+        }
+        100%{
+            background-image: url(images/image\ 7.jpg);
+        }
+    }
+    @keyframes wallpaper2{
+        from {background-image: url('images/animals.jpg');}
+        to {background-image: url('images/mountains.jpg');}
+    }
+
+
+#cate{
+
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#sidei{
+    font-size: 20px;
+    background-color: whitesmoke;
+    padding: 5px;
+    
+}
+
+.navdiv .slide{
+    display: block;
+    float: left;
+}
+
+#sidei:hover{
+    cursor: pointer;
+}
+
+.x:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.category button{
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -10px;
+}
+
+.category button:hover{
+    cursor: pointer;
+    background-color: rgba(84, 69, 223, 0.7);
+    color: whitesmoke;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+.sidenav a{
+    font-size: 15px;
+    list-style-type: georgian;
+    color: bisque;
+    text-decoration: none;
+    border-bottom: 3px solid rebeccapurple;
+}
+
+.sidenav a:hover{
+    font-size: 18px;
+    border-bottom: 5px solid red;
+}
+
+.left1{
+    color: whitesmoke;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    margin-left: 250px;
+    grid-row: 2/auto;
+    grid-column: 1/span 3;
+    margin-top: 250px;
+    margin-right: 400px;
+    text-align: center; 
+    float: left;
+    background-color: rgb(30, 50, 100,0.5);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.left2{
+    color: whitesmoke;
+    margin-left: -20px;
+    grid-column: 3/span 4;
+    grid-row: 2/auto;
+    margin-top: 250px;
+    float: left;
+    margin-right: 400px;
+    border-right: 1px solid black;
+    text-align: center;
+    background-color: rgb(30, 50, 100,0.5);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.left3{
+    color: whitesmoke;
+    float: left;
+    grid-row: 2/auto;
+    margin-right: 100px;
+    grid-column: 4/auto;
+    margin-top: 250px;
+    margin-left: -70px;
+    border-right: 0.5px solid black;
+    text-align: center;
+    background-color: rgb(30, 50, 100,0.5);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.archive{
+    margin-top: 90px;
+    height: 100px;
+    width: 350px;
+    grid-row: 2/auto;
+    grid-column: 3/auto;
+
+    //animation-name: para;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+}
+
+.archive p{
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: cursive;
+    margin-left: -150px;
+
+    //animation-name: font;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes para{
+    from{color: rgb(34, 142, 230);}
+    to{color: crimson;}
+}
+
+@keyframes font{
+    from{font-size: 30px;}
+    to{font-size: 50px; }
+}
