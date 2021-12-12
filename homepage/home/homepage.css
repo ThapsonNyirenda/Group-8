@@ -289,7 +289,7 @@
     grid-row: 2/auto;
     grid-column: 3/auto;
 
-    //animation-name: para;
+    animation-name: para;
     animation-iteration-count: infinite;
     animation-duration: 1s;
     animation-direction: alternate-reverse;
@@ -301,7 +301,7 @@
     font-family: cursive;
     margin-left: -150px;
 
-    //animation-name: font;
+    animation-name: font;
     animation-iteration-count: infinite;
     animation-duration: 3s;
     animation-direction: alternate-reverse;
